@@ -1,6 +1,3 @@
--- // RGB GHOST CLONE - MINIMIZABLE GOD EDITION 2025 \\ --
--- Now with sexy minimize button (click top-right X to collapse)
-
 local player = game.Players.LocalPlayer
 local UIS = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -35,7 +32,7 @@ Glow.ZIndex = 0
 
 -- TITLE
 local Title = Instance.new("TextLabel", Frame)
-Title.Text = "GHOST CLONE"
+Title.Text = "Teto Silent Cloner"
 Title.Size = UDim2.new(0.75,0,0.35,0)
 Title.BackgroundTransparency = 1
 Title.TextColor3 = Color3.fromRGB(255,255,255)
@@ -63,7 +60,7 @@ Content.BackgroundTransparency = 1
 Content.ZIndex = 10
 
 local Sub = Instance.new("TextLabel", Content)
-Sub.Text = "RGB EDITION - PRESS Q OR CLICK"
+Sub.Text = "PRESS Q TO CLONE"
 Sub.Position = UDim2.new(0,0,0.28,0)
 Sub.Size = UDim2.new(1,0,0.2,0)
 Sub.BackgroundTransparency = 1
@@ -75,7 +72,7 @@ local Button = Instance.new("TextButton", Content)
 Button.Size = UDim2.new(0.85,0,0.38,0)
 Button.Position = UDim2.new(0.075,0,0.55,0)
 Button.BackgroundColor3 = Color3.fromRGB(255,0,100)
-Button.Text = "SILENT +2 STUDS"
+Button.Text = "SILENT CLONE!"
 Button.Font = Enum.Font.Arcade
 Button.TextSize = 26
 Button.TextColor3 = Color3.new(1,1,1)
@@ -97,14 +94,14 @@ Minimize.MouseButton1Click:Connect(function()
         TweenService:Create(Glow, TweenInfo.new(0.4), {ImageTransparency = 0.8}):Play()
         Content.Visible = false
         Minimize.Text = "×"
-        Title.Text = "GHOST"
+        Title.Text = "TETO!!!"
     else
         TweenService:Create(Frame, TweenInfo.new(0.4, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 280, 0, 110)}):Play()
         TweenService:Create(Glow, TweenInfo.new(0.4), {ImageTransparency = 0.5}):Play()
         wait(0.3)
         Content.Visible = true
         Minimize.Text = "−"
-        Title.Text = "GHOST CLONE"
+        Title.Text = "Teto Silent Cloner"
     end
 end)
 
@@ -144,10 +141,10 @@ local function silentClone()
     hrp.CFrame = clone.CFrame
     clone:Destroy()
     
-    Button.Text = "GHOSTED"
+    Button.Text = "Cloned!"
     Button.TextColor3 = Color3.fromRGB(0,255,0)
     wait(0.2)
-    Button.Text = "SILENT +2 STUDS"
+    Button.Text = "SILENT CLONE!"
     Button.TextColor3 = Color3.new(1,1,1)
 end
 
@@ -157,6 +154,3 @@ UIS.InputBegan:Connect(function(i,gp)
         silentClone()
     end
 end)
-
-print("RGB GHOST CLONE PRO LOADED")
-print("Q = Silent Clone | Click X to minimize | Pure aura activated")
