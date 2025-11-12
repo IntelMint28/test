@@ -137,7 +137,7 @@ local function silentClone()
     
     local clone = hrp:Clone()
     clone.Parent = char
-    clone.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 2
+    clone.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 3
     hrp.CFrame = clone.CFrame
     clone:Destroy()
     
