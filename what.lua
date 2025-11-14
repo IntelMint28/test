@@ -4,12 +4,12 @@
 
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local Window = Rayfield:CreateWindow({
-    Name = "Grok's Utility Hub",
-    LoadingTitle = "Loading Grok's Script...",
-    LoadingSubtitle = "by xAI",
+    Name = "TestHub",
+    LoadingTitle = "Loading...",
+    LoadingSubtitle = "by Joe Mama",
     ConfigurationSaving = {
         Enabled = true,
-        FolderName = "GrokHub",
+        FolderName = "TestHub",
         FileName = "Config"
     },
 })
@@ -215,7 +215,7 @@ ToolsTab:CreateButton({
 
 -- Notification
 Rayfield:Notify({
-    Title = "Grok's Utility Hub Loaded!",
+    Title = "TestHub",
     Content = "Fly, speed, jump, and Infinite Yield ready.",
     Duration = 6,
 })
